@@ -9,69 +9,80 @@
   </head>
   <body>
     <div class="row">
-      <div class="medium-3 columns text-center">
-        <h1>E-Store</h1>
-      </div>
-      <div class="medium-4 columns medium-offset-5">
-        <div class="column row">
-          <div class="menu align-right">
-            <li><a href="#">ingresa</a></li>
-            <li><a href="#">Registrate</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Mapa del sitio</a></li>
+      <div class="small-12 columns small-order-1">
+        <div class="row align-center">
+          <div class="medium-3 columns text-center">
+            <h1>E-Store</h1>
           </div>
-        </div>
-        <div class="row">
-          <div class="small-9 columns medium-offset-3">
-            <ul class="menu align-right">
-              <li><a><i class="step fi-social-facebook size-36"></i></a></li>
-              <li><a><i class="step fi-social-instagram size-36"></i></a></li>
-              <li><a><i class="step fi-social-twitter size-36"></i></a></li>
-              <li><a><i class="step fi-social-youtube size-36"></i></a></li>
-              <li><a><i class="step fi-social-pinterest size-36"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="column row">
-      <div class="button-group expanded">
-        <a href="#" class="button">Hogar</a>
-        <a href="#" class="button">Salud</a>
-        <a href="#" class="button">Deporte</a>
-        <a href="#" class="button">Tecnologia</a>
-        <a href="#" class="button">Accesorios</a>
-        <a href="#" class="button">Ropa</a>
-        <a href="#" class="button">Mantenimiento</a>
-        <a href="#" class="button hollow alert">Carrito <i class="step-fi-shopping-cart"></i></a>
-      </div>
-    </div>
-
-    <div class="column row">
-      <ul class="breadcrumbs">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Hogar</a></li>
-        <li><a href="#">Varios</a></li>
-        <li>Decoracion</li>
-      </ul>
-    </div>
-
-    <div class="row large-uncollapse">
-      <div class="large-3 columns">
-        <div class="callout">
-          <h4>Busqueda Avanzada</h4>
-          <form>
-            <div class="row column">
-              <label>Por nombre:
-                <input type="text" name="name">
-              </label>
+          <div class="medium-4 columns medium-offset-5">
+            <div class="column row">
+              <div class="menu align-right hide-for-small-only">
+                <li><a href="#">ingresa</a></li>
+                <li><a href="#">Registrate</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Mapa del sitio</a></li>
+              </div>
             </div>
-            <div class="row column">
-              <label>Por referencia:
-                <input type="text" name="name" aria-describedby="referencia-help">
-              </label>
-              <p class="help-text" id="referencia-help">Numero unico del productor</p>
+            <div class="row">
+            <div class="medium-9 columns medium-offset-3 hide-for-small-only-shoe-for-landscape">
+              <ul class="menu align-right">
+                <li><a><i class="step fi-social-facebook size-36"></i></a></li>
+                <li><a><i class="step fi-social-instagram size-36"></i></a></li>
+                <li><a><i class="step fi-social-twitter size-36"></i></a></li>
+                <li><a><i class="step fi-social-youtube size-36"></i></a></li>
+                <li><a><i class="step fi-social-pinterest size-36"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="samall-12 columns small-order-4 medium-order-2">
+      <div class="column row">
+        <div class="button-group expanded">
+          <a href="#" class="button">Hogar</a>
+          <a href="#" class="button">Salud</a>
+          <a href="#" class="button">Deporte</a>
+          <a href="#" class="button">Tecnologia</a>
+          <a href="#" class="button">Accesorios</a>
+          <a href="#" class="button">Ropa</a>
+          <a href="#" class="button">Mantenimiento</a>
+          <a href="#" class="button hollow alert">Carrito <i class="step-fi-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="small-12 columns small-order-2">
+      <div class="column row">
+        <ul class="breadcrumbs" aria-hidden="true">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Hogar</a></li>
+          <li><a href="#">Varios</a></li>
+          <li>Decoracion</li>
+        </ul>
+      </div>
+    </div>
+    <div class="small-12 columns small-order-3">
+      <div class="row large-uncollapse">
+        <div class="large-3 medium-4 columns show-for-medium">
+          <div class="callout">
+            <h4>Busqueda Avanzada</h4>
+            <p class="show-for-sr">
+              A continuacion el formulario.
+            </p>
+            <form>
+              <div class="row column">
+                <label>Por nombre:
+                  <input type="text" name="name">
+                </label>
+              </div>
+              <div class="row column">
+                <label>Por referencia:
+                  <input type="text" name="name" aria-describedby="referencia-help">
+                </label>
+                <p class="help-text" id="referencia-help">
+                  Numero unico del producto
+                </p>
             </div>
             <div class="row column">
               <label>Por categoria:
@@ -103,7 +114,7 @@
             <div class="row columns text-center">
               <label>¿Buscar productos agotados?</label>
               <div class="switch medium">
-                <input type="checkbox" id="agotados-switch" class="switch-input">
+                <input class="switch-input" id="agotados-switch" type="checkbox">
                 <label class="switch-paddle" for="agotados-switch">
                   <span class="switch-active" aria-hidden="true">Si</span>
                   <span class="switch-inactive" aria-hidden="true">No</span>
@@ -122,7 +133,7 @@
           <h3>Decoracion</h3>
           <hr>
           <div class="row large-uncollapse">
-            <div class="large-4 columns">
+            <div class="large-4 small-12 medium-6 columns">
               <div class="secondary callout text-center">
                 <img src="imagenes/crop.jpg" alt="Decoracion 1" class="thumbnail"/>
                 <h5>Decoracion 1</h5>
@@ -131,56 +142,57 @@
                 </p>
               </div>
             </div>
-            <div class="large-4 columns">
+            <div class="large-4 small-12 medium-6 columns">
               <div class="secondary callout text-center">
                 <img src="imagenes/crop.jpg" alt="Decoracion 1" class="thumbnail"/>
-                <h5>Decoracion 1</h5>
+                <h5>Decoracion 2</h5>
                 <p>
                   <a href="#">Ver mas <i class="step fi-plus"></i></a>
                 </p>
               </div>
             </div>
-            <div class="large-4 columns">
+            <div class="large-4 small-12 medium-12 columns">
               <div class="secondary callout text-center">
                 <img src="imagenes/crop.jpg" alt="Decoracion 1" class="thumbnail"/>
-                <h5>Decoracion 1</h5>
+                <h5>Decoracion 3</h5>
                 <p>
                   <a href="#">Ver mas <i class="step fi-plus"></i></a>
                 </p>
               </div>
             </div>
-            <div class="large-4 columns">
+            <div class="large-4 small-12 medium-6 columns">
               <div class="secondary callout text-center">
                 <img src="imagenes/crop.jpg" alt="Decoracion 1" class="thumbnail"/>
-                <h5>Decoracion 1</h5>
+                <h5>Decoracion 4</h5>
                 <p>
                   <a href="#">Ver mas <i class="step fi-plus"></i></a>
                 </p>
               </div>
             </div>
-            <div class="large-4 columns">
+            <div class="large-4 small-12 medium-6 columns">
               <div class="secondary callout text-center">
                 <img src="imagenes/crop.jpg" alt="Decoracion 1" class="thumbnail"/>
-                <h5>Decoracion 1</h5>
+                <h5>Decoracion 5</h5>
                 <p>
                   <a href="#">Ver mas <i class="step fi-plus"></i></a>
                 </p>
               </div>
             </div>
-            <div class="large-4 columns">
+            <div class="large-4 small-12 medium-12 columns">
               <div class="secondary callout text-center">
                 <img src="imagenes/crop.jpg" alt="Decoracion 1" class="thumbnail"/>
-                <h5>Decoracion 1</h5>
+                <h5>Decoracion 6</h5>
                 <p>
                   <a href="#">Ver mas <i class="step fi-plus"></i></a>
                 </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+  </div>
     <script src="js/jquery.js"></script>
     <script src="js/what-input.js"></script>
     <script src="js/foundation.min.js"></script>
